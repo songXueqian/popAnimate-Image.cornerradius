@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i7g-UU-xxH">
+                                <rect key="frame" x="60" y="39" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="lP9-WI-Rt8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jaN-Ar-Svo">
+                                <rect key="frame" x="60" y="186" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.87486618179999998" blue="0.22805647649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ljX-3P-eC8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456790" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irb-1Z-eJP">
+                                <rect key="frame" x="60" y="341" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mUL-B6-Auz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="i7g-UU-xxH" secondAttribute="trailing" constant="75" id="3YO-qL-jJN"/>
+                            <constraint firstItem="Irb-1Z-eJP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="4OH-RS-XSI"/>
+                            <constraint firstItem="i7g-UU-xxH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="GsA-Rs-dTB"/>
+                            <constraint firstItem="i7g-UU-xxH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="I5p-KX-K9C"/>
+                            <constraint firstAttribute="trailing" secondItem="Irb-1Z-eJP" secondAttribute="trailing" constant="75" id="Qic-wQ-i9b"/>
+                            <constraint firstAttribute="trailing" secondItem="jaN-Ar-Svo" secondAttribute="trailing" constant="75" id="VS3-cr-GBH"/>
+                            <constraint firstItem="jaN-Ar-Svo" firstAttribute="top" secondItem="i7g-UU-xxH" secondAttribute="bottom" constant="19" id="Xfx-wR-A2n"/>
+                            <constraint firstItem="Irb-1Z-eJP" firstAttribute="top" secondItem="jaN-Ar-Svo" secondAttribute="bottom" constant="27" id="chg-F5-evk"/>
+                            <constraint firstItem="jaN-Ar-Svo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="zji-aw-Vfx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="downImage" destination="jaN-Ar-Svo" id="8SG-uT-8tr"/>
+                        <outlet property="label" destination="Irb-1Z-eJP" id="RSe-JK-C8W"/>
+                        <outlet property="upImage" destination="i7g-UU-xxH" id="cnb-8Z-IIi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

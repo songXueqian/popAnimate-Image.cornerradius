@@ -1,0 +1,8 @@
+platform :ios, '7.0'
+
+use_frameworks!
+
+target ‘Pop’ do
+   pod 'pop', '~> 1.0.9'
+
+end
